@@ -1,0 +1,122 @@
+:root {
+  --dark-purple: #24053e;
+  --primary-green: #44ffa1;
+  --davy-gray: #584d62;
+  --light-clr: #fcf8ff;
+  --white-clr: #ffffff;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 5rem 10rem;
+  color: var(--dark-purple);
+}
+
+nav {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+nav .workit {
+  font-size: 40px;
+}
+
+nav .design-system {
+  font-size: 18px;
+}
+
+/* Colors Section */
+.colors header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+.number-tag {
+  width: 56px;
+  height: 56px;
+
+  font-size: 24px;
+  line-height: 40px;
+
+  border: 2px solid var(--davy-gray);
+  border-radius: 50%;
+  padding: 8px 20px;
+}
+.title-tag {
+  font-size: 32px;
+}
+
+.color {
+  font-family: "Manrope", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.color-block {
+  height: 100px;
+  width: 100%;
+
+  padding: 8px 16px;
+}
+.color-info {
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.rgb,
+.hsl {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.rgb-title,
+.hsl-title {
+  color: var(--davy-gray);
+  font-weight: 400;
+}
+.rgb-values,
+.hsl-values {
+  font-size: 18px;
+  font-weight: 700;
+}
+.colors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+  row-gap: 56px;
+}
+
+.color-1 .color-block {
+  background-color: #24053e;
+  color: var(--white-clr);
+}
+.color-2 .color-block {
+  background-color: var(--primary-green);
+  color: var(--dark-purple);
+}
+.color-3 .color-block {
+  background-color: var(--davy-gray);
+  color: var(--white-clr);
+}
+.color-4 .color-block {
+  background-color: var(--light-clr);
+  color: var(--dark-purple);
+}
+.color-5 .color-block {
+  background-color: var(--white-clr);
+  color: var(--dark-purple);
+  border: 1px solid var(--davy-gray);
+}
