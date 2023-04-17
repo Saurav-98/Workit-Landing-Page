@@ -35,14 +35,17 @@ nav .design-system {
 }
 
 /* Colors Section */
-.colors header {
+
+section header {
+  font-family: "Fraunces", serif;
+  margin-block: 60px;
+  font-weight: 600;
+
   display: flex;
   align-items: center;
   gap: 30px;
-  font-family: "Fraunces", serif;
-  font-weight: 600;
-  margin-bottom: 60px;
 }
+
 .number-tag {
   width: 56px;
   height: 56px;
@@ -120,3 +123,5 @@ nav .design-system {
   color: var(--dark-purple);
   border: 1px solid var(--davy-gray);
 }
+
+/* Typography Section */
