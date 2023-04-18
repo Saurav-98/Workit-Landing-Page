@@ -1,0 +1,134 @@
+:root {
+  --dark-purple: #24053e;
+  --primary-green: #44ffa1;
+  --davy-gray: #584d62;
+  --light-clr: #fcf8ff;
+  --white-clr: #ffffff;
+}
+
+/* Reset CSS */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+/* Custom Classes */
+/* Headings */
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 6rem;
+  text-align: center;
+}
+.heading-secondary {
+  font-size: 5.6rem;
+}
+.heading-tertiary {
+  font-size: 3.2rem;
+}
+/* Texts */
+.primary-underline {
+  border-bottom: 3px solid var(--primary-green);
+}
+
+/* Buttons  */
+.btn {
+  padding: 1.2rem 2.4rem;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  border: none;
+  display: inline-block;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.35s ease-in;
+}
+
+.btn-primary {
+  background-color: var(--primary-green);
+  color: var(--dark-purple);
+}
+
+.btn-primary:hover {
+  color: var(--primary-green);
+  background-color: transparent;
+  border: 2px solid var(--primary-green);
+}
+.btn-secondary {
+  background-color: transparent;
+  color: var(--white-clr);
+  border-bottom: 3px solid var(--primary-green);
+  padding: 0;
+  padding-bottom: 2px;
+}
+.btn-secondary:hover {
+  color: var(--primary-green);
+  background-color: transparent;
+}
+
+/* General Styles */
+
+.hero {
+  /* background-color: var(--dark-purple); */
+  padding: 1.6em 3.2em;
+  color: var(--white-clr);
+
+  padding-bottom: 15.6rem;
+
+  position: relative;
+  overflow: hidden;
+}
+.hero::after {
+  border-radius: 100%;
+  position: absolute;
+  background-color: var(--dark-purple);
+  right: -200px;
+  left: -200px;
+  top: -200px;
+  content: "";
+  bottom: 0;
+  z-index: -1;
+}
+.hero nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6.4rem;
+}
+.hero-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+.logo {
+  max-width: 100%;
+}
+
+.hero-img__container {
+  min-width: 32rem;
+  /* background-color: red; */
+}
